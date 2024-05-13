@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  background: #000435;
+  text-align: center;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+}
+.header__link {
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .header__link {
+    font-size: 2.3em;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    padding-left: 3%;
+  }
+}
+.nav__list {
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    justify-content: center;
+  }
+}
+.nav__link {
+  display: block;
+  padding: 20px;
+  color: white;
+  font-size: 1.25em;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .nav__link {
+    font-size: 1.5em;
+    padding-right: 50px;
+  }
+}
+.nav__link__current {
+  display: block;
+  padding: 20px;
+  color: #8D8D8D;
+  font-size: 1.25em;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .nav__link__current {
+    font-size: 1.5em;
+    padding-right: 50px;
+  }
+}
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.suggestion {
+  margin-top: 5%;
+  list-style: none;
+  color: black;
+  font-size: 1.3em;
+  line-height: 3em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .suggestion {
+    font-size: 2em;
+    line-height: 3em;
+  }
+}
+.suggestion__link {
+  color: #606060;
+  text-decoration: none;
+  font-weight: bold;
+}
+.suggestion__link:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+  padding: 3%;
+  font-family: "Optima", sans-serif;
+  color: #606060;
+  font-size: 3em;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 5em;
+  }
+}
+
+h3 {
+  text-align: center;
+  padding: 3%;
+  font-family: "Optima", sans-serif;
+  color: #606060;
+  font-size: 1.5em;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 3em;
+  }
+}
+
+h4 {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.5em;
+  }
+}
+
+.graph {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.analysis {
+  padding: 2%;
+  font-size: 1.2em;
+  line-height: 1em;
+}
+@media (min-width: 768px) {
+  .analysis {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+}
+
+.summary__list {
+  padding: 1%;
+  font-size: 1.2em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .summary__list {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+}
+
+.link__list {
+  padding: 1%;
+  padding-bottom: 3%;
+  font-size: 1.2em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .link__list {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+}
+
+.choices__item {
+  background: #8D8D8D;
+  text-align: center;
+  margin: 3%;
+  padding: 2%;
+}
+.choices__button {
+  color: black;
+  font-size: 1.25em;
+  line-height: 1.3em;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .choices__button {
+    font-size: 1.5em;
+    line-height: 1.6em;
+  }
+}
+.choices__button:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=analysis.css.map */
