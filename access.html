@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<title>AP Course Analysis</title>
+		<meta name="description" content="Annamarie's Data Viz Project - access.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="analysis.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="header__title"><a class="header__link" href="index.html">AP Course Analysis</a></h1>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+                    <li class="nav__item__current"><a class="nav__link__current" href="">Course Access</a></li>
+        			<li class="nav__item"><a class="nav__link" href="usage.html">Course Usage</a></li>
+        			<li class="nav__item"><a class="nav__link" href="about.html">About and Misc</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+            <h2>Course Access</h2>
+                
+            <h3>Gender</h3>
+
+			<img class="graph" src="figures/percent_offer_ap_gender.png" alt=""/>
+            <p class="analysis">
+                Male and female students had access to AP Science, Mathematics, and Foreign Languages classes
+                at approximately the same rates. For AP Science and Mathematics, that was a very high rate (more than 90%).
+                AP Foreign Language had slightly less availability for students. 
+            </p> 
+
+            <h3>Race</h3>
+
+            <img class="graph" src="figures/percent_offer_ap_race.png" alt=""/> 
+            <p class="analysis">
+                In AP Science and Mathematics, all racial groups had approximately the same level of access. 
+                However, for AP Foreign Languages, white and Asian students had less access than their peers.
+            </p>
+
+            <h3>School Location</h3>
+
+            <img class="graph" src="figures/percent_offer_ap_strata.png" alt=""/> 
+            <p class="analysis">
+                Students in metro area schools had more access to AP courses across all three subject categories than their rural peers.
+                This disparity was much higher than any other demographic categorization.
+            </p>
+
+            <h3>Parents' Education Level</h3>
+
+            <img class="graph" src="figures/distribution_offer_ap_sci_socio.png" alt=""/> 
+            <p class="analysis">
+                The distribution of total parents' years of education is similar for students offered and not offered at least one AP Science course.
+                However, the distribution of students offered an AP Science course has a thicker right tail,
+                indicating that families with at least one parent who earned a graduate degree were more likely to send their children to schools offering AP Science.
+            </p>
+
+            <img class="graph" src="figures/distribution_offer_ap_math_socio.png" alt=""/> 
+            <p class="analysis">
+                This distribution is nearly identical to the distribution for AP Science access.
+            </p>
+
+            <img class="graph" src="figures/distribution_offer_ap_lang_socio.png" alt=""/> 
+            <p class="analysis">
+                This distribution is nearly identical to the distributions of both AP Science and AP Mathematics access.
+            </p>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<title>AP Course Analysis</title>
+		<meta name="description" content="Annamarie's Data Viz Project - usage top students.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="analysis.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="header__title"><a class="header__link" href="index.html">AP Course Analysis</a></h1>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+        			<li class="nav__item"><a class="nav__link" href="access.html">Course Access</a></li>
+                    <li class="nav__item"><a class="nav__link" href="usage.html">Course Usage</a></li>
+        			<li class="nav__item"><a class="nav__link" href="about.html">About and Misc</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+
+            <h2>Usage - Top Students</h2>
+
+            <h3>Gender</h3>
+
+			<img class="graph" src="figures/percent_take_ap_top5_gender.png" alt=""/>
+            <p class="analysis">
+                In AP Science, there was a 15 percentage point deficit between male and female students offered the subject who took it.
+                The gap was only 8 percentage points in AP Mathematics, and there was an even smaller gap for AP Foreign Language.
+            </p> 
+
+            <img class="graph" src="figures/gender_ratios_by_cat.png" alt=""/>
+            <p class="analysis">
+                Only 37% of students who were in the top decile of their high school class and who planned to attend a Texas public university,
+                which qualified them for the Top 10% Rule, were male.
+                Among students outside the top decile who did not plan to attend a Texas public university, over half were male.
+            </p>
+
+            <h3>Race</h3>
+
+            <img class="graph" src="figures/percent_take_ap_top5_race.png" alt=""/> 
+            <p class="analysis">
+                Over half of students interested in going to a top 5 Texas university took AP Science when offered,
+                and a higher percentage of minority and other/unreported race students took the subject than white/Asian students.
+                In AP Mathematics there was a 15 percentage point deficit between white/Asian and minority students.
+                This pattern was reversed for AP Foreign Language; 10 percentage point more minority students took the subject when offered
+                than white/Asian students.
+            </p>
+
+            <img class="graph" src="figures/white_ratios_by_cat.png" alt=""/>
+            <p class="analysis">
+                Over 50% of students in the top decile of their high school class were white.
+                Of students outside of the top decile and not planning to go to a Texas public university,
+                only 40% were white.
+            </p>
+
+            <ul class="choices__list">
+                <a class="choices__button" href="usage_general.html"><li class="choices__item">Usage for All Students</li></a>
+            </ul>
+		</main>
+	</body>
+</html>

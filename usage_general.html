@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<title>AP Course Analysis</title>
+		<meta name="description" content="Annamarie's Data Viz Project - usage all students.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="analysis.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="header__title"><a class="header__link" href="index.html">AP Course Analysis</a></h1>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+        			<li class="nav__item"><a class="nav__link" href="access.html">Course Access</a></li>
+                    <li class="nav__item"><a class="nav__link" href="usage.html">Course Usage</a></li>
+        			<li class="nav__item"><a class="nav__link" href="about.html">About and Misc</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+            <h2>Usage - All Students</h2>
+            <h3>Gender</h3>
+
+			<img class="graph" src="figures/percent_take_ap_gender.png" alt=""/>
+            <p class="analysis">
+                Over 50% of male students offered AP Science took the subject, and the same is true for AP Mathematics.
+                There was about a 10 percentage point deficit between male and female students in these two subjects.
+                However, only about one-third of students offered AP Foreign Language took the subject,
+                and a slightly higher percentage of female students took it than male students.  
+            </p> 
+
+            <h3>Race</h3>
+
+            <img class="graph" src="figures/percent_take_ap_race.png" alt=""/> 
+            <p class="analysis">
+                Approximately the same percentage of white/Asian and other/unreported race students offered AP Science and AP Mathematics took these courses.
+                There was a 5-10 percentage point deficit between non-minority and minority students in these two subjects.
+                This pattern was reversed for AP Foreign Language; nearly 50% of minority students offered AP Foreign Language took the subject,
+                compared to only 30% of white and Asian students.
+            </p>
+
+            <h3>School Location</h3>
+
+            <img class="graph" src="figures/percent_take_ap_strata.png" alt=""/> 
+            <p class="analysis">
+                There was an approximately 5 percentage point deficit between rural and urban students offered AP Science and AP Mathematics who took these courses,
+                with a higher percentage of students at rural schools taking these courses.
+                These students had less access, so students looking to take the course might have concentrated in schools offering them.
+                There was no deficit for AP Foreign Language.
+            </p>
+
+            <h3>Parents' Education Level</h3>
+
+            <img class="graph" src="figures/distribution_taking_ap_sci_socio.png" alt=""/> 
+            <p class="analysis">
+                The distribution of total parents' years of education is close to identical for students taking and not not taking at least one AP Science course.
+            </p>
+
+            <img class="graph" src="figures/distribution_taking_ap_math_socio.png" alt=""/> 
+            <p class="analysis">
+                This distribution is very similar to the distribution for AP Science access.
+            </p>
+
+            <img class="graph" src="figures/distribution_taking_ap_lang_socio.png" alt=""/> 
+            <p class="analysis">
+                Interestingly, this distribution is different than the distributions for AP Science and AP Mathematics.
+                The distribution of total parents' years of education is skewed more right for students offered but not taking AP Foreign Language,
+                and the distribution is skewed more left for students taking the subject.
+                This could indicate that parents with more education believed that taking AP Foreign Language was not important.
+            </p>
+
+            <ul class="choices__list">
+                <a class="choices__button" href="usage_top.html"><li class="choices__item">Usage for Top Students</li></a>
+            </ul>
+		</main>
+	</body>
+</html>
